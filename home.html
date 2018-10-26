@@ -15,10 +15,15 @@
 <p>
 <button id='demo' onclick="myFunction()">Open in ReadAnywhere</button>
 </p>
+<p>
+User JWT:
+</p>
+<textarea id='jwt' style='width:100%' rows=10></textarea>
 <script>
 function myFunction() {
-    // document.getElementById("demo").style.color = "red";
-    window.open('https://ian-universal-links.herokuapp.com?p1=v1&p2=v2','_self');
+    const jwt = document.getElementById("jwt").value;
+    const url = 'https://ian-universal-links.herokuapp.com?jwt=' + jwt;
+    window.open(url,'_self');
 }
 </script>
 </body>
