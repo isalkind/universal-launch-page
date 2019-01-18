@@ -30,7 +30,7 @@ Project:
 function myFunction() {
     const jwt = document.getElementById("jwt").value;
     const projectid = document.getElementById("projectid").value;
-    const url = 'https://ian-universal-links.herokuapp.com?jwt=' + jwt + '&projectid=' + projectid;
+    const url = 'https://ian-universal-links.herokuapp.com?token=' + jwt + '&projectid=' + projectid;
     window.open(url,'_self');
 }
 </script>
